@@ -1,0 +1,73 @@
+/* global rules */
+:root {
+  --prim-color: #33d1cc;
+  --dark-color: #19283f;
+  --light-color: #eff7fa;
+  --second-color: #ffc400;
+  --third-color: #ff3150;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  background-color: var(--third-color);
+  color: var(--second-color);
+  padding: .5em 1em;
+  transition: .5s;
+}
+
+.main-btn:hover {
+  color: white;
+  background-color: var(--prim-color);
+}
+
+/* start nav */
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar-toggler {
+  color: white;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler[aria-expanded="true"] {
+  color: var(--prim-color);
+  transform: rotate(90deg);
+}
+
+nav .nav-link {
+  color: #fff;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+nav .nav-link:hover,
+nav .nav-link:focus,
+nav .nav-link:active {
+  color: var(--prim-color);
+}
+
+.navbar .search  {
+  border-left: 1px solid var(--prim-color);
+  cursor: pointer;
+}
+
+.navbar .search svg {
+  color: var(--prim-color);
+}
+/* end nav */
+/* start landing */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(90vh - 80px);
+}
+/* end landing */
